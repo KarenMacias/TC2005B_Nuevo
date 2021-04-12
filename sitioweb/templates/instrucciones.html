@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TheBuilding</title>
+    <link rel="icon" type="image/png" href="./static/Media/building1.png" />
+    {% load static %}
+    <link href="{% static 'instruccionesStyles.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Wrapper">
+        <nav id="hamnav">
+            <div class="Space"></div>
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <div id="hamitems">
+                <a href="inicio">Inicio</a>
+                <a href="acercaDe">Acerca de</a>
+                <a href="instrucciones">Instrucciones</a>
+                <a href="estadisticas">Estadísticas</a>
+                <a href="reto">Reto</a>
+                <a href="contactanos">Contáctanos</a>
+            </div>
+        </nav>
+        <div class="MovementContainer">
+            <div class="Movement">
+                <div class="Movement1">
+                    <div>
+                        <h3>Cómo jugar</h3>
+                        <h2>Movimiento</h2>
+                        <p>Para moverte dentro del juego utilza las siguientes teclas:</p>
+                    </div>
+                    <div class="Keyboard">
+                        <div class="Box">
+                            <p class="Tag">Arriba</p>
+                            <img class="Image1" src="./static/Media/arrow.png" alt="Arrow"/>
+                        </div>
+                        <div class="Box">
+                            <p class="Tag">Abajo</p>
+                            <img class="Image2" src="./static/Media/arrow.png" alt="Arrow"/>
+                        </div>
+                        <div class="Box">
+                            <p class="Tag">Izquierda</p>
+                            <img class="Image3" src="./static/Media/arrow.png" alt="Arrow"/>
+                        </div>
+                        <div class="Box">
+                            <p class="Tag">Derecha</p>
+                            <img class="Image4" src="./static/Media/arrow.png" alt="Arrow"/>
+                        </div>
+                        <div class="Box">
+                            <p class="Tag">Saltar</p>
+                            <p class="Image5"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Video">
+                    <img class="Youtube" src="./static/Media/5.png" alt="Youtube"/>
+                </div>
+            </div>
+        </div>
+        <div class="MiniGamesContainer">
+            <div class="Video">
+                <img class="Youtube1" src="./static/Media/4.png" alt="Youtube"/>
+            </div>
+            <div class="MiniGames">
+                <div>
+                    <h2>Mini juegos en salas</h2>
+                    <p>En cada sala te encontrarás con un juego, para pasarlos tienes que utilizar el mouse y las flechas,  para arrastrar elementos desconectar cosas , etcétera.</p>
+                </div>
+                <div class="Images">
+                    <img class="mouseArrow" src="./static/Media/mouseArrow.png" alt="Mouse Arrow"/>
+                    <img class="mouse" src="./static/Media/mouse.png" alt="Mouse"/>
+                </div>
+            </div>
+        </div>
+        <div class="DoorContainer">
+            <div class="Door">
+                <div>
+                    <h2>Abrir puertas</h2>
+                    <p>Para avanzar de nivel debes de abrir las puertas, recuerda que la tercera solo la podrás abrir hasta que se junten la cantidad de llaves que requiere.</p>
+                </div>
+                <div class="Box">
+                    <p class="Description">Arriba</p>
+                    <p class="Blue">O</p>
+                </div>
+            </div>
+            <div class="Video">
+                <img class="Youtube" src="./static/Media/3.png" alt="Youtube"/>
+            </div>
+        </div>
+        <div class="MiniGamesContainer">
+            <div class="Video">
+                <img class="Youtube1" src="./static/Media/2.png" alt="Youtube"/>
+            </div>
+            <div class="MiniGames">
+                <div>
+                    <h2>Pausa</h2>
+                    <p>Si necesitas detenerte en algún momento del juego selecciona el elemento de pausa que encontrarás en la parte superior, dentro tienes botones para continuar, reiniciar el nivel, reiniciar la sala o guardar y salir.
+                        En el apartado de opciones podrás subir y bajar el volumen del sonido, audio o brillo.</p>
+                </div>
+                <div class="Images">
+                    <img class="Image6" src="./static/Media/pause.png" alt="Pause"/>
+                </div>
+            </div>
+        </div>
+        <div class="DoorContainer">
+            <div class="Door">
+                <div>
+                    <h2>Inventario</h2>
+                    <p>Conforme avanzas encontrarás objetos, cuando pasas encima de ellos los agarras , para utilizarlos accede al inventario.</p>
+                </div>
+                <div class="Box">
+                    <p class="Description">Inventario</p>
+                    <p class="Blue">I</p>
+                </div>
+            </div>
+            <div class="Video">
+                <img class="Youtube" src="./static/Media/1.png" alt="Youtube"/>
+            </div>
+        </div>
+    </div>    
+</div>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TheBuilding</title>
+    <link rel="icon" type="image/png" href="./static/Media/building1.png" />
+    {% load static %}
+    <link href="{% static 'indexStyles.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">  
+</head>
+<body>
+  <div class="Wrapper">
+      <div class="Title">
+        <h3>¿Puedes convertirte en un profesional del área STEAM?</h3>
+        <h1>The building</h1>
+      </div>
+      <div class="RegisterContainer">
+        <div class="Image">
+          <embed class="SVG" src="./static/Media/register.svg"/>
+        </div>
+        <div class="Register">
+          <div class="Border">
+            <h2>¡Regístrate para jugar!</h2>
+            <form action="register" method="POST">
+              {% csrf_token %}
+              <div class="InputLabelContainer">
+                <label class="Label">Nombres</label><br>
+                  <input
+                    autoComplete="off"
+                    class="Input"
+                    name="nombres"
+                    placeholder="nombres"
+                    required="True"
+                  ></input>
+              </div>
+              <div class="InputLabelContainer">
+                <label class="Label">Apellido 1</label><br>
+                <input
+                  autoComplete="off"
+                  class="Input"
+                  name="apellido_1"
+                  placeholder="apellido 1"
+                  required="True"
+                ></input>
+              </div>
+              <div class="InputLabelContainer">
+                <label class="Label">Apellido 2</label><br>
+                <input
+                  autoComplete="off"
+                  class="Input"
+                  name="apellido_2"
+                  placeholder="apellido 2"
+                  required="True"
+                />
+              </div>
+              <div class="InputLabelContainer">
+                <label class="Label">Fecha de nacimiento</label><br>
+                <input
+                  autoComplete="off"
+                  class="Input"
+                  name="dob"
+                  type="date"
+                  required="True"
+                />
+              </div>
+              <div class="SexContainer">
+                <label class="Label">Sexo</label>
+                <div class="Sex">
+                  <div class="RadioButton">
+                    <input type="radio" id="male" name="male" value="male">
+                    <label for="male">Masculino</label>
+                  </div>
+                  <div class="RadioButton">
+                    <input type="radio" id="female" name="female" value="female">
+                    <label for="female">Femenino</label>
+                  </div>
+                  <div class="RadioButton">
+                    <input type="radio" id="other" name="other" value="other">
+                    <label for="other">Otro</label><br><br>
+                  </div>
+                </div>
+              </div>
+              <div class="InputLabelContainer">
+                <label class="Label">Email</label><br>
+                <input
+                  autoComplete="off"
+                  class="Input"
+                  name="email"
+                  type="email"
+                  placeholder="micorreo@gmail.com"
+                  required="True"
+                />
+              </div>
+              <div class="InputLabelContainer">
+                <label class="Label">Usuario</label><br>
+                <input
+                  autoComplete="off"
+                  class="Input"
+                  name="usuario"
+                  placeholder="usuario"
+                  required="True"
+                />
+              </div>
+              <div class="InputLabelContainer">
+                <label class="Label">Contraseña</label><br>
+                <input
+                  autoComplete="off"
+                  class="Input"
+                  name="password"
+                  type="password"
+                  placeholder="contraseña"
+                  required="True"
+                />
+              </div>
+              <div class="ButtonBorder">
+                <input
+                  class="Input_One"
+                  type="submit"
+                  value="Regístrate"
+                />
+              </div>
+            </form>
+            <div>¿Ya estas registrado? ¡Da click <a class="ButtonText" href="inicio">aquí</a> para ir a la página de inicio!</div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
