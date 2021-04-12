@@ -1,0 +1,368 @@
+body {
+  background-color: #2B4162;
+}
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #F5F0F6;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  flex-wrap: wrap;
+}
+h1 {
+  text-transform: uppercase;
+  margin: 0px 0px 0px 0px;
+  font-size: 57px;
+  font-weight: bold;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0px 0px 0px 0px;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 5px;
+  color : #2B4162;
+}
+h3 {
+  letter-spacing: 10px;
+  margin: 40px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #4BC0D9;
+}
+h4 {
+  letter-spacing: 8px;
+  margin: 20px 0px 0px 0px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #FC9E4F;
+  font-weight: bolder;
+}
+
+
+
+#hamnav {
+  width: 100%;
+  height: 60px;
+  background:#2B4162;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#hamnav .space {
+  width: 40%;
+}
+#hamnav label, #hamburger { display: none; }
+#hamitems { display: flex; width: 60% }
+#hamitems a {
+  width: 20%;
+  padding: 15px;
+  color: #4BC0D9;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  float: right;
+}
+#hamitems a:hover {
+  background: #2B4162;
+  color: #FC9E4F;
+}
+#hamitems a:link {
+  color: #4BC0D9;
+}
+#hamitems a:active {
+  text-decoration: underline;
+}
+
+
+
+
+.TitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+}
+.Button {
+  background-color: #4BC0D9;
+  width: 100px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.Button:hover {
+  background-color: transparent;
+  border: 2px solid #4BC0D9;
+  color: #4BC0D9;
+}
+.Button1:link {
+  color: #F5F0F6;
+  text-decoration: none;
+}
+    
+.Button1:visited {
+  text-decoration: none;
+  color:#F5F0F6;
+}
+    
+.Button1:hover {
+  color: #4BC0D9;
+}
+    
+.Button1:active {
+  text-decoration: underline;
+}
+
+
+
+.RecordsContainer {
+  background-color: #F5F0F6;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  width: 45%;
+  margin-top: 50px;
+  border-radius: 15px;
+  color: #FC9E4F;
+}
+.Records {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.Image {
+  width: 10%;
+}
+.Player {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+}
+.Player1 {
+  margin: 0px 0px 0px 10px;
+  color: #2B4162;
+  text-align: left;
+}
+.PlayerTime {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+}
+.Time {
+  width: 20%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  text-transform: uppercase;
+  margin: 16px 0px;
+}
+.TimeBul {
+  margin: 0px 0px 0px 0px;
+}
+.Time1 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin: 16px 0px;
+}
+
+
+
+
+.GameContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+.Title2 {
+  color: #F5F0F6;
+}
+.Title4 {
+  color: #4BC0D9;
+}
+.Image1 {
+  width: 85%;
+}
+
+
+
+.DownloadContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  width: 50%;
+  margin-top: 50px;
+}
+.MoreAboutContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+}
+.Tags {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  width: 45%;
+}
+.Download {
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  width: 45%;
+}
+a {
+  color: #4BC0D9;
+}
+a:hover {
+  color: #FC9E4F;
+}
+a:link {
+  color: #4BC0D9;
+}
+a:active {
+  text-decoration: underline;
+}
+.Box {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width: 100%;
+}
+.Tag {
+  background-color: #4BC0D9;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+
+
+@media(max-width: 1250px) {
+  .RecordsContainer {
+    width: 60%;
+  }
+}
+
+@media(max-width: 960px) {
+  .RecordsContainer {
+    width: 70%;
+  }
+  .MoreAboutContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Tags {
+    width: 90%;
+  }
+  .Download {
+    width: 100%;
+  }
+}
+
+@media(max-width: 856px) {
+  .RecordsContainer {
+    width: 85%;
+  }
+}
+
+@media(max-width: 664px) {
+  .RecordsContainer {
+    width: 90%;
+  }
+  .Time {
+    text-align: left;
+  }
+}
+
+@media(max-width: 536px) {
+  .Player {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+  }
+  .PlayerTime {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+  }
+  .DownloadContainer {
+    width: 100%;
+  }
+}
+
+@media(max-width: 390){
+  .Player{
+    align-items: left;
+    width: 60%;
+  }
+  .PlayerTime {
+    width: 40%;
+  }
+}
+
+
+/*Hasta el 390 los records se ven bien*/
+/*Cambiar estructura de los records, 5 divs dentro del container, cada uno con 3 divs, el de nombre, time y tiempo final
+
+
+/*Menu styles */
+@media screen and (max-width: 1105px) {
+  #hamnav .Space {
+    width: 20%;
+  }
+  #hamitems {
+    display: flex; 
+    width: 80% 
+  }
+}
+@media screen and (max-width: 824px) {
+  #hamnav .Space {
+    width: 10%;
+  }
+  #hamitems {
+    width: 90% 
+  }
+}
+@media screen and (max-width: 768px){
+  #hamnav .Space {
+    width: 0%;
+  }
+  #hamitems {
+    width: 100% 
+  }
+  #hamnav label { 
+    display: inline-block; 
+    color: #f2f2f2;
+    background: #2B4162;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    background-color: #2B4162;
+  }
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}

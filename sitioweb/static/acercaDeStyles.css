@@ -1,0 +1,164 @@
+body {
+  background-color: #2B4162;
+}
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #F5F0F6;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0px 0px 0px 0px;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 5px;
+  color : #F5F0F6;
+}
+h3 {
+  letter-spacing: 10px;
+  margin: 40px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #4BC0D9;
+}
+
+
+
+#hamnav {
+  width: 100%;
+  height: 60px;
+  background:#2B4162;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#hamnav .space {
+  width: 40%;
+}
+#hamnav label, #hamburger { display: none; }
+#hamitems { display: flex; width: 60% }
+#hamitems a {
+  width: 20%; 
+  padding: 15px;
+  color: #4BC0D9;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  float: right;
+}
+#hamitems a:hover {
+  background: #2B4162;
+  color: #FC9E4F;
+}
+#hamitems a:link {
+  color: #4BC0D9;
+}
+#hamitems a:active {
+  text-decoration: underline;
+}
+
+  
+
+
+.ContextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 100%;
+}
+.Context, .Points {
+  width: 45%;
+  text-align: justify;
+}
+.Title3 {
+  text-align: left;
+}
+.Title2 {
+  text-align: left;
+}
+
+
+
+.PlayerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  margin-top: 25px;
+}
+.Space {
+  width: 45%;
+}
+.PlayerTitle2 {
+  text-align: right;
+}
+.Player {
+  width: 45%;
+  text-align: justify;
+}
+
+
+
+@media(max-width:425px) {
+  .Context, .Player, .Points {
+    width: 90%;
+  }
+  .Space {
+    width: 0%;
+  }
+}
+
+
+
+/*Menu styles */
+@media screen and (max-width: 1105px) {
+  #hamnav .Space {
+    width: 20%;
+  }
+  #hamitems {
+    display: flex; 
+    width: 80% 
+  }
+}
+@media screen and (max-width: 824px) {
+  #hamnav .Space {
+    width: 10%;
+  }
+  #hamitems {
+    width: 90% 
+  }
+}
+@media screen and (max-width: 768px){
+  h3 {
+    margin: 0px 0px 0px 0px;
+  }
+  #hamnav .Space {
+    width: 0%;
+  }
+  #hamitems {
+    width: 100% 
+  }
+  #hamnav label { 
+    display: inline-block; 
+    color: #f2f2f2;
+    background: #2B4162;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    background-color: #2B4162;
+  }
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}

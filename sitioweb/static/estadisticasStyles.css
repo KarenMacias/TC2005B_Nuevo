@@ -1,0 +1,219 @@
+body {
+  background-color: #2B4162;
+}
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  color: #F5F0F6;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h2 {
+  text-transform: uppercase;
+  margin: 0px 0px 0px 0px;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color : #F5F0F6;
+}
+h3 {
+  letter-spacing: 10px;
+  margin: 40px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #4BC0D9;
+}
+    
+    
+    
+#hamnav {
+  width: 100%;
+  height: 60px;
+  background:#2B4162;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#hamnav .space {
+  width: 40%;
+}
+#hamnav label, #hamburger { display: none; }
+#hamitems { display: flex; width: 60% }
+#hamitems a {
+  width: 20%;
+  padding: 15px;
+  color: #4BC0D9;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  float: right;
+}
+#hamitems a:hover {
+  background: #2B4162;
+  color: #FC9E4F;
+}
+#hamitems a:link {
+  color: #4BC0D9;
+}
+#hamitems a:active {
+  text-decoration: underline;
+}
+
+
+
+
+.GlobalStadisticsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 100%;
+  text-align: left;
+}
+.GlobalStadisticsOne {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+}
+.GlobalStadistics {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 50%;
+}
+.LocalStadisticsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 100%;
+  text-align: left;
+}
+.LocalStadisticsOne, .LocalStadisticsTwo, .LocalStadisticsThree, .LocalStadisticsFour, .LocalStadisticsFive {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.LocalStadistics{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 50%;
+}
+
+
+
+.Top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Image {
+  width: 5%;
+  border: 2px solid #4BC0D9;
+  border-radius: 50%;
+  padding: 5px;
+  transform: rotate(180deg);
+}
+.Last {
+  letter-spacing: 10px;
+  margin: 10px 0px 0px 0px;
+  font-size: 15px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #4BC0D9;
+}
+
+@media(max-width: 1307px){
+  h3 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  .GlobalStadisticsOne {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .LocalStadisticsOne, .LocalStadisticsTwo, .LocalStadisticsThree, .LocalStadisticsFour, .LocalStadisticsFive {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .LocalStadistics, .GlobalStadistics {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media(max-width: 674px) {
+  .chart {
+    width: 100%;
+    height: 300px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+}
+
+/*Averguar como editar las gráficas y porque el menu no se ve correctamente */
+
+
+/*Menu styles */
+@media screen and (max-width: 1105px) {
+  #hamnav .Space {
+    width: 20%;
+  }
+  #hamitems {
+    display: flex; 
+    width: 80% 
+  }
+}
+@media screen and (max-width: 824px) {
+  #hamnav .Space {
+    width: 10%;
+  }
+  #hamitems {
+    width: 90% 
+  }
+}
+@media screen and (max-width: 768px){
+  h3 {
+    margin: 20px 0px 0px 0px;
+  }
+  #hamnav .Space {
+    width: 0%;
+  }
+  #hamitems {
+    width: 100% 
+  }
+  #hamnav label { 
+    display: inline-block; 
+    color: #f2f2f2;
+    background: #2B4162;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  #hamitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    background-color: #2B4162;
+  }
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+}
